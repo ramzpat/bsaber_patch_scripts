@@ -36,8 +36,11 @@ function pause(){
 
 echo "Checking Tools ..."
 # prepare folder?
-mkdir -p "apk"
-mkdir -p "backup"
+mkdir -p "$BACKUP_APK"
+mkdir -p "$PATCHED_APK"
+mkdir -p "$BACKUP_DLC"
+mkdir -p "$BACKUP_FILE"
+mkdir -p "$CustomSongsPath"
 
 if [ ! -f "$SONG_CONVERTER" ]; then
 	echo "Error: $SONG_CONVERTER is not found."
